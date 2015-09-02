@@ -7,6 +7,7 @@ $plugin = array(
   'theme' => 'galeria',
   'css' => 'galeria.css',
   'regions' => array(  	
+  	'titulo' => t('Titulo'),
   	'middle' => t('Coluna do Meio')
   	),
 );

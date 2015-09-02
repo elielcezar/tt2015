@@ -267,7 +267,7 @@ a.botao i {
 a.botao:hover,
 a.botao:active {
   background: white;
-  color: #333333;
+  color: #333333 !important;
   text-decoration: none;
   cursor: pointer;
 }
@@ -384,36 +384,51 @@ a.botao.left:hover i {
   margin: 53px 0 0 40px;
 }
 #topo .menu {
-  float: left;
-  margin-top: 25px;
-  /*margin-left: 120px;*/
+  /*float: left; 
+    margin-top: 25px;       
+    li{      
+      float: left;
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+    }
+    li.active a,
+    li:hover a{color: #333;}  
 
-  /*li:last-child a{
-      border-right: none;
-      padding-right: 0;
-    }*/
+    a{
+      color: #fff;
+      font-weight: normal;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 20px 25px;
+      line-height: 13px;
+      font-family: @fontepadrao2;      
+
+      &:hover{color: #333 !important;}
+  }*/
+  float: right;
+  width: 80%;
+  margin: 0;
+  text-align: right;
+  /*a{
+    float: left;
+    display: block;
+    width: auto;
+  }*/
 
 }
 #topo .menu li {
-  float: left;
   display: inline-block;
-  padding: 0;
+  width: auto;
   margin: 0;
+  padding: 0;
+  float: right;
 }
-#topo .menu li.active a,
-#topo .menu li:hover a {
-  color: #333333;
+#topo .menu li a {
+  font-family: 'Avant Garde';
+  padding: 0 10px;
 }
-#topo .menu a {
-  color: white;
-  font-weight: normal;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 20px 25px;
-  line-height: 13px;
-  font-family: 'proxima_novalight', 'sans-serif', 'Arial';
-}
-#topo .menu a:hover {
+#topo .menu li a:hover {
   color: #333333 !important;
 }
 #topo .redes-sociais {
@@ -477,8 +492,8 @@ body.front #topo {
 /*--- INGRESSOS ------------------------------------------------------------------------*/
 
 #section2 {
-  background: #313131 url(../img/bg02.jpg) top center no-repeat;
-  min-height: 2000px;
+  background: #313131 url(../img/bg04.jpg) top center no-repeat;
+  min-height: 1600px;
 }
 #ingressos {
   width: 100%;
@@ -548,11 +563,25 @@ body.front #topo {
 #ingressos .ingresso3 a {
   color: #333333 !important;
 }
+/*--- LINE UP ---------------------------------------------------------------------------*/
+
+#section3 {
+  background: #313131 url(../img/lineup.jpg) top center no-repeat;
+  font-family: 'Avant Garde';
+  padding: 800px 0 250px 0;
+  margin-bottom: -100px;
+  width: 100%;
+  color: white;
+}
+#lineup {
+  padding: 150px 0;
+  background: #222222;
+}
 /*--- INFOS -----------------------------------------------------------------------------*/
 
 #infos {
   color: white;
-  margin-top: 500px;
+  margin-top: 300px;
 }
 #infos .evolution-town {
   padding-top: 150px;
@@ -627,7 +656,7 @@ body.front #topo {
   background: #1b1b1b;
   color: white;
   text-align: center;
-  margin-top: 250px;
+  margin-top: 150px;
   padding: 10% 0;
 }
 #participe h2 {
@@ -662,6 +691,42 @@ body.front #topo {
 }
 /* formularios */
 
+.modal.fade h2 {
+  text-align: center;
+  padding-top: 60px;
+  width: 100%;
+  background: transparent url(../img/ico_ttwhite.png) top center no-repeat;
+}
+.modal.fade .modal-body,
+.modal.fade .modal-content {
+  float: left;
+}
+.modal.fade label {
+  display: inline-block;
+  float: left;
+  width: 140px;
+  text-align: right;
+  margin-right: 10px;
+}
+.modal.fade input,
+.modal.fade select,
+.modal.fade textarea,
+.modal.fade #edit-submitted-curriculo-portfolio {
+  width: 400px;
+  display: inline-block;
+  float: left;
+}
+.modal.fade .form-managed-file input[type="submit"] {
+  width: 100px;
+  float: right;
+  margin-right: 10px;
+  padding: 7px 0;
+}
+.modal.fade input[value="Enviar"] {
+  width: 300px;
+  margin: 20px 10px 0 0;
+  float: right;
+}
 .modal .form-item {
   float: left;
   width: 100%;
@@ -669,21 +734,18 @@ body.front #topo {
   margin-right: .5%;
   border: 1px solid white;
 }
-.modal #webform-component-cidade,
+/*.modal #webform-component-cidade,
 .modal #webform-component-cep,
 .modal #webform-component-tamanho-de-camiseta,
 .modal #webform-component-sexo,
-.modal #webform-component-celular {
-  width: 48%;
-}
+.modal #webform-component-celular{width: 48%;}
+
 .modal #webform-component-estado,
 .modal #webform-component-pais,
 .modal #webform-component-data-de-nascimento,
 .modal #webform-component-comida-de-preferencia,
-.modal #webform-component-operadora {
-  width: 48%;
-  float: right;
-}
+.modal #webform-component-operadora{width: 48%; float: right;}*/
+
 .modal .form-select {
   border: 1px solid #cccccc;
   padding: 10px 0;
@@ -710,7 +772,9 @@ input[name="submitted_curriculo_portfolio_upload_button"] {
 }
 #store a {
   font-weight: bold;
-  color: #333333;
+  color: #333333 !important;
+  font-family: 'Avant Garde';
+  font-size: 1.4em;
 }
 /*--- BLOG -----------------------------------------------------------------------------/
 
@@ -1039,11 +1103,56 @@ input[name="submitted_curriculo_portfolio_upload_button"] {
 }
 /*--- GALERIA DE FOTOS ---------------------------------------------------------------*/
 
-#thumbcarousel .item {
-  border: 1px solid red;
+body.galeria {
+  background: #444444 url(../img/india.jpg) center center fixed no-repeat;
+  background-size: cover;
+}
+body.galeria #topo {
+  background: transparent;
+}
+body.galeria #topo .chamada {
+  padding: 75px 0 25px 0;
+  font-family: 'Avant Garde';
+  letter-spacing: -2px;
+}
+body.galeria #topo .chamada span {
+  color: #bcbcbc;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+body.galeria #topo .chamada h2 {
+  color: white;
+  font-size: 4em;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+body.galeria .conteudo {
+  float: left;
+  width: 100%;
+  padding: 0 0 200px 0;
+  background: transparent;
+  margin-bottom: -100px;
+  color: white;
+  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
+  -webkit-shape-inside: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
+  shape-inside: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
+}
+body.galeria .conteudo #carousel-bounding-box {
+  max-width: 750px;
+  margin: auto;
+}
+body.galeria .conteudo #carousel-bounding-box #myCarousel img {
+  width: 100%;
+  height: auto;
+}
+body.galeria .conteudo #carousel-bounding-box #thumbcarousel .item {
+  border: 2px solid #333333;
   float: left;
   width: auto;
   display: block;
+  width: 20%;
 }
 /*--- RODAPE ------------------------------------------------------------------------*/
 

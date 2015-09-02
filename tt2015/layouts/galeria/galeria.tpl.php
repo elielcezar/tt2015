@@ -54,12 +54,12 @@
       </div>
       </header>  
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-12">
           <div class="chamada">
-            <h2>Galeria de Imagens</h2>
+            <?php print $content['titulo']; ?>
           </div>
         </div>
-        <div class="col-sm-6"></div>
+        
       </div>
     </div>    
   </section><!--section1 / topo -->

@@ -6,11 +6,11 @@
     <header>
       <div class="row">
           <div class="col-sm-6">
-            <a href="<?php print $GLOBALS['base_path']; ?>"><img class="logo" src="<?php print base_path() . path_to_theme() .'/' ?>img/tt.png" /></a>            
+            <a href="<?php print $GLOBALS['base_path']; ?>"><img class="logo" src="<?php print base_path() . path_to_theme() .'/' ?>img/tt.png" /></a>
           </div>     
           <div class="col-sm-6">
             <!-- Sidebar -->
-      <div id="sidebar">
+      <!--div id="sidebar">
         <ul class="menu">
             <li><a href="<?php print $GLOBALS['base_path']; ?>">Página Inicial</a></li>
             <li><a href="<?php print $GLOBALS['base_path']; ?>lineup">Atrações</a></li>
@@ -19,15 +19,15 @@
             <li><a data-toggle="pill" href="#participe">Participe</a></li>
             <li><a data-toggle="pill" href="#excursoes">Excursões</a></li>
             <li><a href="#">Pacotes</a></li>            
-            <!--li><a href="#modalcontato" data-toggle="modal">Fotos</a></li-->
+            <li><a href="#modalcontato" data-toggle="modal">Fotos</a></li>
             <li><a href="http://tribaltechstore.minestore.com.br/">Store</a></li>
             <li><a href="#form-contato" data-toggle="modal">Contato</a></li>            
         </ul>
-        </div><!-- sidebar -->
-             <a id="menu-toggle">
+        </div--><!-- sidebar -->
+             <!--a id="menu-toggle">
                 <span>MENU</span>
                 <div class="burger"><b></b><b></b><b></b></div>
-            </a>
+            </a-->
             <span class="data">10e11out</span>
              
               <ul class="redes-sociais">
@@ -36,6 +36,19 @@
                   <li class="twitter"><a href="https://twitter.com/tribaltechunder">twitter</a></li>                  
                 </ul>  
             
+          </div>
+          <div class="col-sm-12">
+              <ul class="menu"> 
+                
+                <li><a href="#form-contato" data-toggle="modal">Contato</a></li> 
+                <li><a href="#fotos" data-toggle="modal">Fotos</a></li>
+                <li><a href="http://tribaltechstore.minestore.com.br/">Store</a></li>                
+                <li><a data-toggle="pill" href="#participe">Participe</a></li>
+                <li><a data-toggle="pill" href="#excursoes">Excursões</a></li>                
+                <li><a href="<?php print $GLOBALS['base_path']; ?>evolutiontown">Evolution Town</a></li>    
+                <li><a href="http://www.aloingressos.com.br/tribaltech">Ingressos</a></li>
+                <li><a href="<?php print $GLOBALS['base_path']; ?>lineup">Atrações</a></li>       
+            </ul>
           </div>
           
 <div class="overlay">&nbsp;</div>
@@ -90,6 +103,42 @@
         </div>
       </div>
       </div><!-- ingressos -->
+
+<section id="section3" class="">
+  <div id="lineup" class="inclinado2">
+    <div class="container">
+    <div class="col-sm-12">
+      <p>
+      10\SÁBADO<br/>
+      ALOK \ ANDRE MARQUES \ ANINHA \ ANNA \ AUTOMACK \ AVALON \ 
+      AZAX VC. BLISS \ BIEL \ BOGHOSIAN \ BORIS BREJCHA \ CLAUDE VON STROKE \
+      COBBLESTONE JAZZ \ DAKE \ DASHDOT \ DERRICK CARTER \ DOP \
+      DO SANTOS \ ELI IWASA \ FABIO LEAL \ GABE \ GROMMA \ HAUSTUFF \
+      ILLUSIONIZE \ JUSTIN MARTIN \ KANIO \ KLAYTON KEPPEN \ KULTRA \ MAJOR7 \
+      MATHEW JONSON \ MERKABA \ PIMPO&amp;ZACCHI \ PILLOWTALK \
+      RENAN MENDES &amp; BOGUS \ RENATO COHEN \ RINKADINK &amp; ELEMENT \
+      RODRIGO FERRARI \ SHADOW FX &amp; TETRAMETH \ TIGER &amp; WOODS \ TOUCHTALK \
+      TRAUMER \ VICTOR RUIZ AV ANY MELLO \ VINTAGE CULTURE \ VOLKODER \
+      WILL CLARKE \ 4i20
+      </p>
+      <p>
+      11\DOMINGO<br/>
+      ADNAN SHARIF \ ALBUQUERQUE \ ALTRUISM \ ANTONELA \ ATMOS \
+      CAPITAL MONKEY \ CARL CRAIG \ CHRIS LIEBING \ CIRCUIT BREAKERS \
+      DANNY DAZE \ DAVID KENO \ DAVIS \ DIGITARIA \ DUBFIRE: LIVE HYBRID \
+      ELEKFANTZ \ ELLEN ALLIEN \ FABO \ FABRICIO PEÇANHA \ FLOW&amp;ZEO \
+      KUNKY FAT \ FUTURE FREQUENCY \ GAISER \ HNQO \ H.O.S.H. \ ITAL \ K-ISUMA \
+      LEO JANEIRO &amp; LEOZINHO \ LOUD \ MARCO RESMANN \ MATTHIAS MEYER \
+      OXIA \ POPOF \ RENATO RATIER \ RODHAD \ ROLLDABEETZ \ ROMAN FLUGEL \
+      SCOTTY \ SONIC SPECIES \ STEKKE \ STMMING \ SWARUP \ THE DRONE LOVERS \
+      THE FIRST STONE \ TRANG \ TRISTAN \ VERTICAL MODE \\
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+
+
   <section id="section2" class="inclinado1">
     <div class="container">      
       <div id="infos">
@@ -131,8 +180,8 @@
               </div>
               <div class="col-sm-2">
                 <img src="<?php print base_path() . path_to_theme() .'/' ?>img/ico_chefs.png" />
-                <h4>chefs</h4>
-                <p>Que tal trazer seu foodtruck u seu restaurante pra Tribaltech?</p>
+                <h4>paraça de alimentação</h4>
+                <p>Que tal trazer seu foodtruck ou seu restaurante pra Tribaltech?</p>
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#form-chefs">+</button>
                       
@@ -189,9 +238,9 @@
             <area href="<?php print $GLOBALS['base_path']; ?>tribaltech-2006" shape="poly" coords="521,94,517,434,7,476,0,134" />
             <area href="<?php print $GLOBALS['base_path']; ?>tribaltech-2007" shape="poly" coords="523,93,523,434,1085,387,1087,48" />
             <area href="<?php print $GLOBALS['base_path']; ?>tribaltech-2008" shape="poly" coords="1598,8,1597,347,1087,388,1091,48,1597,6" />
-            <area href="<?php print $GLOBALS['base_path']; ?>tribaltech-2009" shape="poly" coords="1085,389,1082,703,1599,665,1596,349" />
+            <area href="<?php print $GLOBALS['base_path']; ?>tribaltech-2011" shape="poly" coords="1085,389,1082,703,1599,665,1596,349" />
             <area href="<?php print $GLOBALS['base_path']; ?>tribaltech-2010" shape="poly" coords="1079,702,521,747,525,439,1081,392" />
-            <area href="<?php print $GLOBALS['base_path']; ?>tribaltech-2011" shape="poly" coords="517,747,515,436,1,479,1,786" />            
+            <area href="<?php print $GLOBALS['base_path']; ?>tribaltech-2009" shape="poly" coords="517,747,515,436,1,479,1,786" />            
         </map>
               
     
@@ -330,15 +379,18 @@
 <script src="<?php print base_path() . path_to_theme() .'/' ?>js/imageMapResizer.min.js" type="text/javascript"></script>
 <!--script type="text/javascript" src="<?php print base_path() . path_to_theme() .'/' ?>js/modernizr.js"></script-->
 <script type="text/javascript" src="<?php print base_path() . path_to_theme() .'/' ?>js/list-filter.js"></script>
-<script type="text/javascript" src="<?php print base_path() . path_to_theme() .'/' ?>js/jquery.airport.min.js"></script>
+<script type="text/javascript" src="<?php print base_path() . path_to_theme() .'/' ?>js/jquery.airport.js"></script>
 <script src="<?php print base_path() . path_to_theme() .'/' ?>js/geral.js"></script>
 <script type="text/javascript">
     $('#topo').parallax("50%", 0.1);
-    $('#section2').parallax("50%", 0.3);
-    var words = [ "Booka Shade", "Boris Brejcha", "Element", "Gabe", "HNQO", "Dubfire" ];
+    $('#section2').parallax("50%", 0.5);
+    $('#section3').parallax("50%", 0.5);
+
+    //var words = [ "Booka Shade", "Boris Brejcha", "Element", "Gabe", "HNQO", "Dubfire" ];
+    var words = [ "CARL CRAIG", "ELEKFANTZ", "ROMAN FLUGEL", "CHRIS LIEBING", "DERRICK CARTER", "MATHEW JONSON", "PILLOWTALK", "JUSTIN MARTIN", "ADNAN SHARIF", "ELLEN ALLIEN", "TOUCHTALK", "VERTICAL MODE", "SONIC SPECIES", "BORIS BREJCHA", "VINTAGE CULTURE", "ROLLDABEETZ" ];
     $(".example2").airport(words, {
-        fill_space: false,
-        transition_speed: 100
+        fill_space: true,
+        transition_speed: 1
     });
     $('#busca').keypress(function() {
       $('#lista-excursoes .resultado').css('display','block');
