@@ -49,4 +49,13 @@ $('#menu-principal').click(function(e){
 });*/
  $('.menu').localScroll();  
  $('.menu2').localScroll();  
+ $('.contagem').localScroll();
+
+
+
+/* ajustes mobile */
+/*if($(window).width() <= 767){
+  $("#atracoes .vazio").hide();
+}*/
+
 });

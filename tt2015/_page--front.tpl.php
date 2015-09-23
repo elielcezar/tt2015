@@ -10,7 +10,7 @@
 
        <ul id="menu-secoes" class="menu nav navbar-nav">
            <li><a href="#form-contato" data-toggle="modal">Contato</a></li> 
-          <li><a href="#fotos" data-toggle="pill">Fotos</a></li>
+          <li><a href="#fotos" data-toggle="modal">Fotos</a></li>
           <!--li><a href="http://tribaltechstore.minestore.com.br/">Store</a></li-->                
           <li><a data-toggle="pill" href="#participe">Participe</a></li>
           <li><a data-toggle="modal" data-target="#lista-excursoes" href="#">Excursões</a></li>                
@@ -29,34 +29,12 @@
       <div class="row">
           <div class="col-sm-12">
             <a href="<?php print $GLOBALS['base_path']; ?>"><img class="logo img-responsive" src="<?php print base_path() . path_to_theme() .'/' ?>img/tt.png" /></a>
-            <nav id="topnav" class="navbar navbar-default" role="navigation">
-                      
-                      <div class="navbar-header">
-                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                          </button>
-                      </div>
-                      <div class="collapse navbar-collapse navbar-ex1-collapse">
-                         <div class="menu-secoes">
-                         <ul id="menu-secoes" class="menu nav navbar-nav">
-                             <li><a href="#form-contato" data-toggle="modal">Contato</a></li> 
-                            <li><a href="#fotos" data-toggle="pill">Fotos</a></li>
-                            <!--li><a href="http://tribaltechstore.minestore.com.br/">Store</a></li-->                
-                            <li><a data-toggle="pill" href="#participe">Participe</a></li>
-                            <li><a data-toggle="modal" data-target="#lista-excursoes" href="#">Excursões</a></li>                
-                            <!--li><a href="<?php print $GLOBALS['base_path']; ?>evolutiontown">Evolution Town</a></li-->    
-                            <li><a href="#pdvs" data-toggle="modal">Pontos de Venda</a></li>
-                            <li><a href="http://www.aloingressos.com.br/tribaltech">Ingressos</a></li>
-                            <li><a href="<?php print $GLOBALS['base_path']; ?>lineup">Atrações</a></li>       
-                            </ul>
-                        </div>
-                     </div><!-- /.navbar-collapse -->
-                    
-              </nav>
-            
+             <span class="data">10 e 11out</span>
+             
+              <ul class="redes-sociais">                  
+                  <li class="facebook"><a href="https://www.facebook.com/TribaltechOfficial" target="_blank">facebook</a></li>
+                  <li class="instagram"><a href="https://instagram.com/tribaltechofficial/" target="_blank">instagram</a></li>
+                </ul>  
           </div>     
           
             <!-- Sidebar -->
@@ -80,19 +58,35 @@
             </a-->
           
           <div class="col-sm-12">
-            
-
-               <img class="patrocinio" src="<?php print base_path() . path_to_theme() .'/' ?>img/logo_skol.png" />
-            <img class="patrocinio" src="<?php print base_path() . path_to_theme() .'/' ?>img/logo_fusion.png" />
-             <span class="data">10 e 11out</span>
-             
-              <ul class="redes-sociais">                  
-                  <li class="facebook"><a href="https://www.facebook.com/TribaltechOfficial" target="_blank">facebook</a></li>
-                  <li class="instagram"><a href="https://instagram.com/tribaltechofficial/" target="_blank">instagram</a></li>
-                </ul> 
-
-                
-           
+            <div class="row">
+                <nav id="topnav" class="navbar navbar-default" role="navigation">
+                      
+                      <div class="navbar-header">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                      </div>
+                      <div class="collapse navbar-collapse navbar-ex1-collapse">
+                         <div class="menu-secoes">
+                         <ul id="menu-secoes" class="menu nav navbar-nav">
+                             <li><a href="#form-contato" data-toggle="modal">Contato</a></li> 
+                            <li><a href="#fotos" data-toggle="modal">Fotos</a></li>
+                            <!--li><a href="http://tribaltechstore.minestore.com.br/">Store</a></li-->                
+                            <li><a data-toggle="pill" href="#participe">Participe</a></li>
+                            <li><a data-toggle="modal" data-target="#lista-excursoes" href="#">Excursões</a></li>                
+                            <!--li><a href="<?php print $GLOBALS['base_path']; ?>evolutiontown">Evolution Town</a></li-->    
+                            <li><a href="#pdvs" data-toggle="modal">Pontos de Venda</a></li>
+                            <li><a href="http://www.aloingressos.com.br/tribaltech">Ingressos</a></li>
+                            <li><a href="<?php print $GLOBALS['base_path']; ?>lineup">Atrações</a></li>       
+                            </ul>
+                        </div>
+                     </div><!-- /.navbar-collapse -->
+                    
+              </nav>
+            </div>             
              
           </div>
           
@@ -124,7 +118,7 @@
               <div class="ingresso1">
                 <p class="comprar"><a href="http://www.aloingressos.com.br/tribaltech">Comprar</a></p>
                 <a href="http://www.aloingressos.com.br/tribaltech"><img src="<?php print base_path() . path_to_theme() .'/' ?>img/10-10.png" /></a>
-                <p class="sobre">Um dia repleto de<br/>atrações surpresas</p>                
+                <p class="sobre">Atrações surpresas<br/>até o sol raiar</p>                
               </div>
           </div>
           <div class="col-sm-4">

@@ -1,6 +1,6 @@
 @corpadrao: #fff;
 @corpadrao2: #ccc;
-
+@fontepadrao: 'Open Sans', sans-serif;
 .transition{
   -webkit-transition: all 0.3s ease;
      -moz-transition: all 0.3s ease;
@@ -76,48 +76,47 @@
     font-style: normal;
 }
 
-
 @font-face {
-    font-family: 'proxima_nova_altextrabold';
-    src: url('../mark_simonson_-_proxima_nova_alt_extrabold-webfont.eot');
-    src: url('../mark_simonson_-_proxima_nova_alt_extrabold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../mark_simonson_-_proxima_nova_alt_extrabold-webfont.woff2') format('woff2'),
-         url('../mark_simonson_-_proxima_nova_alt_extrabold-webfont.woff') format('woff'),
-         url('../mark_simonson_-_proxima_nova_alt_extrabold-webfont.ttf') format('truetype'),
-         url('../mark_simonson_-_proxima_nova_alt_extrabold-webfont.svg#proxima_nova_altextrabold') format('svg');
+    font-family: 'proxima_novalight';
+    src: url('proximanova-light-webfont.eot');
+    src: url('proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-light-webfont.woff2') format('woff2'),
+         url('proximanova-light-webfont.woff') format('woff'),
+         url('proximanova-light-webfont.ttf') format('truetype'),
+         url('proximanova-light-webfont.svg#proxima_novalight') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'proxima_nova_alt_rgregular';
-    src: url('../mark_simonson_-_proxima_nova_alt_regular-webfont.eot');
-    src: url('../mark_simonson_-_proxima_nova_alt_regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../mark_simonson_-_proxima_nova_alt_regular-webfont.woff2') format('woff2'),
-         url('../mark_simonson_-_proxima_nova_alt_regular-webfont.woff') format('woff'),
-         url('../mark_simonson_-_proxima_nova_alt_regular-webfont.ttf') format('truetype'),
-         url('../mark_simonson_-_proxima_nova_alt_regular-webfont.svg#proxima_nova_alt_rgregular') format('svg');
+    font-family: 'proxima_nova_rgregular';
+    src: url('proximanova-regular-webfont.eot');
+    src: url('proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-regular-webfont.woff2') format('woff2'),
+         url('proximanova-regular-webfont.woff') format('woff'),
+         url('proximanova-regular-webfont.ttf') format('truetype'),
+         url('proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'proxima_nova_blblack';
-    src: url('../mark_simonson_-_proxima_nova_black-webfont.eot');
-    src: url('../mark_simonson_-_proxima_nova_black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../mark_simonson_-_proxima_nova_black-webfont.woff2') format('woff2'),
-         url('../mark_simonson_-_proxima_nova_black-webfont.woff') format('woff'),
-         url('../mark_simonson_-_proxima_nova_black-webfont.ttf') format('truetype'),
-         url('../mark_simonson_-_proxima_nova_black-webfont.svg#proxima_nova_blblack') format('svg');
+    font-family: 'proxima_novasemibold';
+    src: url('proximanova-semibold-webfont.eot');
+    src: url('proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-semibold-webfont.woff2') format('woff2'),
+         url('proximanova-semibold-webfont.woff') format('woff'),
+         url('proximanova-semibold-webfont.ttf') format('truetype'),
+         url('proximanova-semibold-webfont.svg#proxima_novasemibold') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
-@fontepadrao: 'Avant Garde', sans-serif;
-@fontepadrao2: 'proxima_nova_alt_rgregular', sans-serif;
+@fontepadrao: 'Avant Garde';
+@fontepadrao2: 'proxima_novalight', 'sans-serif', 'Arial';
 
 /********************************************************************/
 
@@ -321,12 +320,22 @@ a.botao.left:hover{
 }
 
 /* modal */
+.modal-dialog {
+    width: 100%;
+    /*max-width: 950px;
+    top: 5%;*/
+     max-width: 950px  !important;  
+    top: 5%  !important;    
+  }
 
 .modal-content  {
   -webkit-border-radius: 0px !important;
   -moz-border-radius: 0px !important;
   border-radius: 0px !important;   
- 
+  /* width: 100%  !important;
+    max-width: 950px  !important;  
+    top: 5%  !important;*/
+    
 }
 
 
@@ -392,44 +401,9 @@ a.botao.left:hover{
   background-color: #4e4e4e;   
   padding: 0 0 10% 0;
 
-  /* menu extra */
-  .menu-scroll{
-    width: 100%;
-    background: #333;
-    position: fixed;
-    top: 0;
-    opacity: 0;     
-    z-index: 700;  
-    .transition;
-    .container{margin-top: 0;}
-    .logo{
-      max-height: 35px;
-      float: left;
-      width: auto;
-      margin-top: 5px;      
-    }
-    ul.menu{
-      float: right;
-      width: 75%;      
-    }
-  }
-  .menu-scroll.fixed{opacity: 1;}
-
   header{
 
-    .col-sm-12{
-      padding-top: 0 !important;      
-    }
-
-    .logo{
-      margin: 36px 0 0 0; 
-      float: left;
-    }
-
-    .patrocinio{
-      float: left;
-      margin: 30px 40px 0 -20px;
-    }
+    .logo{margin-top: 36px; float: left;}
 
     span.data{
       font-family: @fontepadrao;
@@ -438,48 +412,45 @@ a.botao.left:hover{
       display: inline-block;
       float: right;
       letter-spacing: -2px;
-      margin: 0 20px 0 40px;
+      margin: 53px 0 0 40px;
     }
   }
-  /* menu principal */
-  #topnav{
-    margin-top: 46px;
-    float: right; 
-    width: auto;
-  }
+
   .navbar-default{
     background: transparent;
     border: none;
     width: 100%;
     float: left;
   }
-  .navbar-collapse{padding-right: 0;}
-  .menu{   
-    float: right;
+
+  .menu{ 
+
+  
+  float: right;
+  width: 80%;
+  margin: 0;
+  text-align: right;
+
+  li{    
+    display: inline-block;
     width: auto;
-    margin: 0;
-    text-align: right;
+    margin: 2px 0 0 0;
+    padding: 0;
+    float: right;
 
-    li{    
+
+    a{
+      font-family: @fontepadrao;
+      padding: 0 10px;
+      border-width: 2px;
+      padding: 10px;
       display: inline-block;
-      width: auto;
-      margin: 2px 0 0 0;
-      padding: 0;
-      float: right;
 
-      a{
-        font-family: @fontepadrao;
-        border-width: 2px;
-        padding: 10px;
-        display: inline-block;
-
-        a:last-child{padding-right: 0;}
-
-        &:hover{
-          color: #333 !important; 
-          text-decoration: none;      
-        }
-      }    
+      &:hover{
+        color: #333 !important; 
+        text-decoration: none;      
+      }
+    }    
   }
 
   li.active{ 
@@ -497,12 +468,19 @@ a.botao.left:hover{
       a{color: #fff; background: transparent;}
     }
 
+  /*a{
+    float: left;
+    display: block;
+    width: auto;
+  }*/
+
+
 }
 
   .redes-sociais{
     float: right;
     width: 186px;
-    margin-top: 0;    
+    margin-top: 53px;    
 
     li{
       float: right;
@@ -519,7 +497,6 @@ a.botao.left:hover{
     li.youtube a{background: transparent url(../img/ico_youtube.png) center center no-repeat;}
     li.facebook a{background: transparent url(../img/ico_fb.png) center center no-repeat;}
     li.twitter a{background: transparent url(../img/ico_twitter.png) center center no-repeat;}
-    li.instagram a{background: transparent url(../img/ico_instagram.png) center center no-repeat;}
   }
 
   .contagem{      
@@ -547,9 +524,12 @@ a.botao.left:hover{
         margin: 0;        
         letter-spacing: -2px;
         text-align: left;
-        font-weight: 800;       
+        font-weight: 800;
+        /*-webkit-transition: color .1s ease-in;
+        -moz-transition: color .1s ease-in;
+        -o-transition: color .1s ease-in;
+        transition: color .1s ease-in;*/
       }
-      .rotate{height: 100px; overflow: hidden;}
   }
 }
 
@@ -676,6 +656,10 @@ body.front #topo{margin-bottom: -150px; }
   }
 
 }
+/*#lineup{
+  padding: 150px 0;
+ background: #222;
+}*/
 
 
 /*--- INFOS -----------------------------------------------------------------------------*/
@@ -686,7 +670,7 @@ body.front #topo{margin-bottom: -150px; }
   .pdv{    
     padding-top: 150px;
     margin-bottom: 150px;
-    background: transparent url(../img/ico_ingressos.png) top left no-repeat;
+    background: transparent url(../img/ico_evolutiontown.png) top left no-repeat;
 
     h4{
       margin-left: 90px;
@@ -700,18 +684,6 @@ body.front #topo{margin-bottom: -150px; }
   .evolution-town{    
     padding-top: 150px;
     background: transparent url(../img/ico_evolutiontown.png) top left no-repeat;
-
-    h4{
-      margin-left: 90px;
-      font-size: 32px;
-    }
-    p{margin-left: 90px;}
-    .botao{margin-left: 70px;}
-  }
-
-  .pacotes{    
-    padding-top: 150px;
-    background: transparent url(../img/ico_pacotes.png) top left no-repeat;
 
     h4{
       margin-left: 90px;
@@ -830,9 +802,9 @@ body.front #topo{margin-bottom: -150px; }
   background: transparent url(../img/ico_ttwhite.png) top center no-repeat;
 }
 
-.modal.fade .modal-body{
+.modal.fade .modal-body,
+.modal.fade .modal-content{
   float: left;
-  background: #fff; 
 }
 .modal.fade label{
   display: inline-block;
@@ -962,31 +934,6 @@ input[name="submitted_curriculo_portfolio_upload_button"]{padding: 4px 21px; flo
     }
   }
 
-  .pane-page-tabs{
-    padding: 0;
-    margin: 0;    
-
-    .tabs{
-      margin: 0;
-
-      li{
-        display: block;
-        float: left !important;
-
-        a, a:hover{
-          display: inline-block;
-          color: #333 !important;
-          float: left;
-          padding: 7px 14px;
-          border: 2px solid #333;
-          margin-right: 10px !important;
-        }
-      }
-    }
-
-    
-  }
-
   .conteudo{
     float: left;
     width: 100%;      
@@ -999,34 +946,7 @@ input[name="submitted_curriculo_portfolio_upload_button"]{padding: 4px 21px; flo
     -webkit-shape-inside: polygon(0 3%, 100% 0, 100% 100%, 0 97%);
     shape-inside: polygon(0 3%, 100% 0, 100% 100%, 0 97%);
 
-    p a{color: #333 !important;}
-    p a:hover{text-decoration: underline !important;}
-
-    .view-topo-noticia {
-      margin-bottom: 50px;
-
-      .views-field-field-chamada{
-        padding: 20px 0;
-        border-top: 2px solid #eee;
-        border-bottom: 2px solid #eee;        
-        margin: 10px 0 25px 0;
-      }
-
-      .twitter, .facebook{float: left;}
-    }
-  }
-
-  .pane-blog-sidebar{
-    a{color: #333 !important;}
-    a:hover{text-decoration: underline !important;}
-
-    .view-blog-sidebar{
-      .views-row{ 
-        margin: 25px 0;
-
-        .titulo-post{text-transform: uppercase;}
-      }
-    }
+    .view-topo-noticia {margin-bottom: 50px;}
   }
 
 }
@@ -1035,7 +955,7 @@ input[name="submitted_curriculo_portfolio_upload_button"]{padding: 4px 21px; flo
 
 #fotos{
   position: relative;
-  z-index: 250;
+  z-index: 500;
   margin-bottom: -100px;
 }
 
@@ -1071,10 +991,10 @@ input[name="submitted_curriculo_portfolio_upload_button"]{padding: 4px 21px; flo
 
     img{float: left;}
 
-    .endereco a{
+    a{
       display: inline-block;
       float: left;
-      padding: 20px 40px;
+      padding: 40px;
       text-align: center;
       color: #fff;
       background: #000;
@@ -1764,10 +1684,7 @@ footer{
 
 @media (min-width: 768px){
   
-  #pdvs .modal-dialog  .views-field-body{
-    width: 600px;
-    margin-top: 50px;
-  }
+  #pdvs .modal-dialog  {width:75%;}
   
 }
 

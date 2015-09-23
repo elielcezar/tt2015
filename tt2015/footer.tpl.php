@@ -46,7 +46,7 @@
               scaleControl: false,
               center:new google.maps.LatLng(-25.499183,-49.097557)
               };
-              var image = 'http://www.ecwd.net/trip/marcador-localk.png';
+              var image = 'http://tribaltech.com.br/sites/all/themes/tt2015/img/ico_ttmapa.png';
               map = new google.maps.Map(document.getElementById('googlemaps'),
               mapOptions);
               // Show the default red marker at the location
@@ -60,7 +60,7 @@
               });
               map.setOptions({styles: styles});
               var infowindow = new google.maps.InfoWindow({
-              content:"<h4>M2E Comunicação Digital</h4><p>Rua Anna Gbur Barcik, 499 - Santo Inácio<br />CEP 82010-670<br />Curitiba/PR<br /> >> <a href=\"http://goo.gl/7V88Z3\" target=\"_blank\">Saiba como chegar</a></p>"
+              content:"<h4>Fazenda Heimari</h4><p>Rua Atílio Pedão, 15<br /> >> <a style=\"color: #333 !important; font-weight: bold; \" href=\"https://www.google.com.br/maps/place/R.+At%C3%ADlio+Ped%C3%A3o,+15+-+%C3%81guas+Claras,+Piraquara+-+PR/@-25.499183,-49.097557,17z/data=!3m1!4b1!4m2!3m1!1s0x94dcf39214a83e0b:0x2939d995edeedbbd\" target=\"_blank\">Saiba como chegar</a></p>"
               });
               google.maps.event.addListener(marker, 'click', function() { infowindow.open(map,marker); });
               }
@@ -71,27 +71,24 @@
   <div class="container">
     <div class="row">
         <div class="col-sm-1">
-          <img src="<?php print base_path() . path_to_theme() .'/' ?>img/ico_ttwhite.png" />
+          <img src="<?php print base_path() . path_to_theme() .'/' ?>img/ico_ttblack3.png" />
         </div>
         <div class="col-sm-5">
           <ul class="menu2">
            <li><a href="<?php print $GLOBALS['base_path']; ?>">Página Inicial</a></li>
-            <li><a href="<?php print $GLOBALS['base_path']; ?>lineup">Atrações</a></li>
+            <li><a href="<?php print $GLOBALS['base_path']; ?>#topo-atracoes">Atrações</a></li>
             <li><a href="http://www.aloingressos.com.br/tribaltech">Ingressos</a></li>
-            <li><a href="<?php print $GLOBALS['base_path']; ?>evolutiontown">Evolution Town</a></li>
-            <li><a data-toggle="pill" href="#participe">Participe</a></li>
-            <li><a data-toggle="pill" href="#excursoes">Excursões</a></li>
-            <li><a href="#">Pacotes</a></li>                        
-            <li><a href="http://tribaltechstore.minestore.com.br/">Store</a></li>
+            <!--li><a href="<?php print $GLOBALS['base_path']; ?>evolutiontown">Evolution Town</a></li-->
+            <li><a data-toggle="pill" href="<?php print $GLOBALS['base_path']; ?>#participe">Participe</a></li>
+            <li><a data-toggle="modal" data-target="#lista-excursoes" href="#">Excursões</a></li>              
+            <!--li><a href="http://tribaltechstore.minestore.com.br/">Store</a></li-->
             <li><a href="#form-contato" data-toggle="modal">Contato</a></li>       
           </ul>
         </div>
         <div class="col-sm-5">
            <ul>
-              <li><a href="https://www.facebook.com/TribaltechOfficial">facebook</a></li>
-              <li><a href="https://instagram.com/tribaltechofficial/">instagram</a></li>
-              <li><a href="https://twitter.com/tribaltechunder">twitter</a></li> 
-              <li><a href="https://www.youtube.com/user/Tribaltechunder?feature=guide">Youtube</a></li>       
+              <li><a href="https://www.facebook.com/TribaltechOfficial" target="_blank">facebook</a></li>
+              <li><a href="https://instagram.com/tribaltechofficial/" target="_blank">instagram</a></li>              
             </ul>
         </div>
     </div>  

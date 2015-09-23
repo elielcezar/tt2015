@@ -116,8 +116,8 @@
 
 }
 
-@fontepadrao: 'Avant Garde', sans-serif;
-@fontepadrao2: 'proxima_nova_alt_rgregular', sans-serif;
+@fontepadrao: 'Avant Garde';
+@fontepadrao2: 'proxima_nova_alt_rgregular', 'sans-serif';
 
 /********************************************************************/
 
@@ -321,12 +321,20 @@ a.botao.left:hover{
 }
 
 /* modal */
+.modal-dialog {
+    /*width: 100%;    
+     max-width: 950px  !important;  
+    top: 5%  !important;    */
+  }
 
 .modal-content  {
   -webkit-border-radius: 0px !important;
   -moz-border-radius: 0px !important;
   border-radius: 0px !important;   
- 
+  /* width: 100%  !important;
+    max-width: 950px  !important;  
+    top: 5%  !important;*/
+    
 }
 
 
@@ -392,22 +400,24 @@ a.botao.left:hover{
   background-color: #4e4e4e;   
   padding: 0 0 10% 0;
 
-  /* menu extra */
   .menu-scroll{
     width: 100%;
     background: #333;
     position: fixed;
     top: 0;
     opacity: 0;     
-    z-index: 700;  
+    z-index: 500;  
     .transition;
+
     .container{margin-top: 0;}
+
     .logo{
       max-height: 35px;
       float: left;
       width: auto;
       margin-top: 5px;      
     }
+
     ul.menu{
       float: right;
       width: 75%;      
@@ -417,19 +427,7 @@ a.botao.left:hover{
 
   header{
 
-    .col-sm-12{
-      padding-top: 0 !important;      
-    }
-
-    .logo{
-      margin: 36px 0 0 0; 
-      float: left;
-    }
-
-    .patrocinio{
-      float: left;
-      margin: 30px 40px 0 -20px;
-    }
+    .logo{margin-top: 36px; float: left;}
 
     span.data{
       font-family: @fontepadrao;
@@ -438,48 +436,45 @@ a.botao.left:hover{
       display: inline-block;
       float: right;
       letter-spacing: -2px;
-      margin: 0 20px 0 40px;
+      margin: 53px 0 0 40px;
     }
   }
-  /* menu principal */
-  #topnav{
-    margin-top: 46px;
-    float: right; 
-    width: auto;
-  }
+
   .navbar-default{
     background: transparent;
     border: none;
     width: 100%;
     float: left;
   }
-  .navbar-collapse{padding-right: 0;}
-  .menu{   
-    float: right;
+
+  .menu{ 
+
+  
+  float: right;
+  width: 80%;
+  margin: 0;
+  text-align: right;
+
+  li{    
+    display: inline-block;
     width: auto;
-    margin: 0;
-    text-align: right;
+    margin: 2px 0 0 0;
+    padding: 0;
+    float: right;
 
-    li{    
+
+    a{
+      font-family: @fontepadrao;
+      padding: 0 10px;
+      border-width: 2px;
+      padding: 10px;
       display: inline-block;
-      width: auto;
-      margin: 2px 0 0 0;
-      padding: 0;
-      float: right;
 
-      a{
-        font-family: @fontepadrao;
-        border-width: 2px;
-        padding: 10px;
-        display: inline-block;
-
-        a:last-child{padding-right: 0;}
-
-        &:hover{
-          color: #333 !important; 
-          text-decoration: none;      
-        }
-      }    
+      &:hover{
+        color: #333 !important; 
+        text-decoration: none;      
+      }
+    }    
   }
 
   li.active{ 
@@ -497,12 +492,19 @@ a.botao.left:hover{
       a{color: #fff; background: transparent;}
     }
 
+  /*a{
+    float: left;
+    display: block;
+    width: auto;
+  }*/
+
+
 }
 
   .redes-sociais{
     float: right;
     width: 186px;
-    margin-top: 0;    
+    margin-top: 53px;    
 
     li{
       float: right;
@@ -547,7 +549,11 @@ a.botao.left:hover{
         margin: 0;        
         letter-spacing: -2px;
         text-align: left;
-        font-weight: 800;       
+        font-weight: 800;
+        /*-webkit-transition: color .1s ease-in;
+        -moz-transition: color .1s ease-in;
+        -o-transition: color .1s ease-in;
+        transition: color .1s ease-in;*/
       }
       .rotate{height: 100px; overflow: hidden;}
   }
@@ -676,6 +682,10 @@ body.front #topo{margin-bottom: -150px; }
   }
 
 }
+/*#lineup{
+  padding: 150px 0;
+ background: #222;
+}*/
 
 
 /*--- INFOS -----------------------------------------------------------------------------*/
@@ -1035,7 +1045,7 @@ input[name="submitted_curriculo_portfolio_upload_button"]{padding: 4px 21px; flo
 
 #fotos{
   position: relative;
-  z-index: 250;
+  z-index: 500;
   margin-bottom: -100px;
 }
 

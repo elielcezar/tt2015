@@ -69,23 +69,23 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'proxima_nova_altextrabold';
-  src: url('../mark_simonson_-_proxima_nova_alt_extrabold-webfont.eot');
-  src: url('../mark_simonson_-_proxima_nova_alt_extrabold-webfont.eot?#iefix') format('embedded-opentype'), url('../mark_simonson_-_proxima_nova_alt_extrabold-webfont.woff2') format('woff2'), url('../mark_simonson_-_proxima_nova_alt_extrabold-webfont.woff') format('woff'), url('../mark_simonson_-_proxima_nova_alt_extrabold-webfont.ttf') format('truetype'), url('../mark_simonson_-_proxima_nova_alt_extrabold-webfont.svg#proxima_nova_altextrabold') format('svg');
+  font-family: 'proxima_novalight';
+  src: url('proximanova-light-webfont.eot');
+  src: url('proximanova-light-webfont.eot?#iefix') format('embedded-opentype'), url('proximanova-light-webfont.woff2') format('woff2'), url('proximanova-light-webfont.woff') format('woff'), url('proximanova-light-webfont.ttf') format('truetype'), url('proximanova-light-webfont.svg#proxima_novalight') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'proxima_nova_alt_rgregular';
-  src: url('../mark_simonson_-_proxima_nova_alt_regular-webfont.eot');
-  src: url('../mark_simonson_-_proxima_nova_alt_regular-webfont.eot?#iefix') format('embedded-opentype'), url('../mark_simonson_-_proxima_nova_alt_regular-webfont.woff2') format('woff2'), url('../mark_simonson_-_proxima_nova_alt_regular-webfont.woff') format('woff'), url('../mark_simonson_-_proxima_nova_alt_regular-webfont.ttf') format('truetype'), url('../mark_simonson_-_proxima_nova_alt_regular-webfont.svg#proxima_nova_alt_rgregular') format('svg');
+  font-family: 'proxima_nova_rgregular';
+  src: url('proximanova-regular-webfont.eot');
+  src: url('proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'), url('proximanova-regular-webfont.woff2') format('woff2'), url('proximanova-regular-webfont.woff') format('woff'), url('proximanova-regular-webfont.ttf') format('truetype'), url('proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'proxima_nova_blblack';
-  src: url('../mark_simonson_-_proxima_nova_black-webfont.eot');
-  src: url('../mark_simonson_-_proxima_nova_black-webfont.eot?#iefix') format('embedded-opentype'), url('../mark_simonson_-_proxima_nova_black-webfont.woff2') format('woff2'), url('../mark_simonson_-_proxima_nova_black-webfont.woff') format('woff'), url('../mark_simonson_-_proxima_nova_black-webfont.ttf') format('truetype'), url('../mark_simonson_-_proxima_nova_black-webfont.svg#proxima_nova_blblack') format('svg');
+  font-family: 'proxima_novasemibold';
+  src: url('proximanova-semibold-webfont.eot');
+  src: url('proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('proximanova-semibold-webfont.woff2') format('woff2'), url('proximanova-semibold-webfont.woff') format('woff'), url('proximanova-semibold-webfont.ttf') format('truetype'), url('proximanova-semibold-webfont.svg#proxima_novasemibold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -95,7 +95,7 @@ html {
   height: 100%;
 }
 body {
-  font-family: 'proxima_nova_alt_rgregular', sans-serif !important;
+  font-family: 'proxima_novalight', 'sans-serif', 'Arial' !important;
   padding: 0;
   height: 100%;
   color: white;
@@ -112,7 +112,7 @@ h1,
 h1#page-title {
   margin: 0;
   padding: 0;
-  font-family: 'Avant Garde', sans-serif !important;
+  font-family: 'Avant Garde' !important;
   font-size: 4em;
   line-height: 1em;
   letter-spacing: -1px;
@@ -124,7 +124,7 @@ h1#page-title {
 h2 {
   margin: 0;
   padding: 0;
-  font-family: 'Avant Garde', sans-serif !important;
+  font-family: 'Avant Garde' !important;
   font-size: 3em;
   line-height: 1.2em;
   letter-spacing: -1px;
@@ -132,7 +132,7 @@ h2 {
   display: inline-block;
 }
 h3 {
-  font-family: 'Avant Garde', sans-serif !important;
+  font-family: 'Avant Garde' !important;
   font-size: 2.58em;
   line-height: 1.2em;
   letter-spacing: -1px;
@@ -144,7 +144,7 @@ h3 {
 h4 {
   padding: 0;
   margin: 15px 0 0 0;
-  font-family: 'Avant Garde', sans-serif !important;
+  font-family: 'Avant Garde' !important;
   font-size: 2em;
   line-height: 1em;
   letter-spacing: -1px;
@@ -156,7 +156,7 @@ h4 {
 h5 {
   padding: 0;
   margin: 15px 0 0 0;
-  font-family: 'Avant Garde', sans-serif !important;
+  font-family: 'Avant Garde' !important;
   line-height: 1.4em;
   width: auto;
   display: inline-block;
@@ -181,7 +181,7 @@ p {
 .conteudo a {
   color: #333333;
   font-weight: bold;
-  font-family: 'Avant Garde', sans-serif;
+  font-family: 'Avant Garde';
 }
 /* abas */
 
@@ -223,7 +223,7 @@ form .form-required {
 input.form-submit {
   background: transparent;
   color: #333333;
-  font-family: 'Avant Garde', sans-serif;
+  font-family: 'Avant Garde';
   display: inline-block;
   font-size: 1em;
   margin: 10px 0 0 0;
@@ -244,7 +244,7 @@ input.form-submit:hover {
 a.botao {
   background: transparent;
   color: white;
-  font-family: 'Avant Garde', sans-serif;
+  font-family: 'Avant Garde';
   display: inline-block;
   font-size: 1em;
   margin: 10px 0 0 0;
@@ -304,6 +304,10 @@ a.botao.left:hover i {
   -webkit-border-radius: 0px !important;
   -moz-border-radius: 0px !important;
   border-radius: 0px !important;
+  /* width: 100%  !important;
+    max-width: 950px  !important;  
+    top: 5%  !important;*/
+
 }
 /*section{height: 110%;}*/
 
@@ -359,63 +363,19 @@ a.botao.left:hover i {
 #topo {
   background-color: #4e4e4e;
   padding: 0 0 10% 0;
-  /* menu extra */
-
-  /* menu principal */
-
-}
-#topo .menu-scroll {
-  width: 100%;
-  background: #333333;
-  position: fixed;
-  top: 0;
-  opacity: 0;
-  z-index: 700;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-#topo .menu-scroll .container {
-  margin-top: 0;
-}
-#topo .menu-scroll .logo {
-  max-height: 35px;
-  float: left;
-  width: auto;
-  margin-top: 5px;
-}
-#topo .menu-scroll ul.menu {
-  float: right;
-  width: 75%;
-}
-#topo .menu-scroll.fixed {
-  opacity: 1;
-}
-#topo header .col-sm-12 {
-  padding-top: 0 !important;
 }
 #topo header .logo {
-  margin: 36px 0 0 0;
+  margin-top: 36px;
   float: left;
-}
-#topo header .patrocinio {
-  float: left;
-  margin: 30px 40px 0 -20px;
 }
 #topo header span.data {
-  font-family: 'Avant Garde', sans-serif;
+  font-family: 'Avant Garde';
   color: white;
   font-size: 24px;
   display: inline-block;
   float: right;
   letter-spacing: -2px;
-  margin: 0 20px 0 40px;
-}
-#topo #topnav {
-  margin-top: 46px;
-  float: right;
-  width: auto;
+  margin: 53px 0 0 40px;
 }
 #topo .navbar-default {
   background: transparent;
@@ -423,14 +383,17 @@ a.botao.left:hover i {
   width: 100%;
   float: left;
 }
-#topo .navbar-collapse {
-  padding-right: 0;
-}
 #topo .menu {
   float: right;
-  width: auto;
+  width: 80%;
   margin: 0;
   text-align: right;
+  /*a{
+    float: left;
+    display: block;
+    width: auto;
+  }*/
+
 }
 #topo .menu li {
   display: inline-block;
@@ -440,13 +403,11 @@ a.botao.left:hover i {
   float: right;
 }
 #topo .menu li a {
-  font-family: 'Avant Garde', sans-serif;
+  font-family: 'Avant Garde';
+  padding: 0 10px;
   border-width: 2px;
   padding: 10px;
   display: inline-block;
-}
-#topo .menu li a a:last-child {
-  padding-right: 0;
 }
 #topo .menu li a:hover {
   color: #333333 !important;
@@ -468,7 +429,7 @@ a.botao.left:hover i {
 #topo .redes-sociais {
   float: right;
   width: 186px;
-  margin-top: 0;
+  margin-top: 53px;
 }
 #topo .redes-sociais li {
   float: right;
@@ -488,9 +449,6 @@ a.botao.left:hover i {
 }
 #topo .redes-sociais li.twitter a {
   background: transparent url(../img/ico_twitter.png) center center no-repeat;
-}
-#topo .redes-sociais li.instagram a {
-  background: transparent url(../img/ico_instagram.png) center center no-repeat;
 }
 #topo .contagem {
   margin-top: 100px;
@@ -520,10 +478,11 @@ a.botao.left:hover i {
   letter-spacing: -2px;
   text-align: left;
   font-weight: 800;
-}
-#topo .contagem .rotate {
-  height: 100px;
-  overflow: hidden;
+  /*-webkit-transition: color .1s ease-in;
+        -moz-transition: color .1s ease-in;
+        -o-transition: color .1s ease-in;
+        transition: color .1s ease-in;*/
+
 }
 body.front #topo {
   margin-bottom: -150px;
@@ -556,7 +515,7 @@ body.front #topo {
   width: 100%;
 }
 #ingressos strong {
-  font-family: 'Avant Garde', sans-serif;
+  font-family: 'Avant Garde';
   text-transform: lowercase;
   font-size: 24px;
 }
@@ -568,7 +527,7 @@ body.front #topo {
 #ingressos p.comprar a {
   color: black;
   font-weight: bold;
-  font-family: 'Avant Garde', sans-serif;
+  font-family: 'Avant Garde';
 }
 #ingressos p.sobre {
   margin-top: 20px;
@@ -607,7 +566,7 @@ body.front #topo {
 
 #atracoes {
   background: #313131 url(../img/lineup.jpg) 50% 0 no-repeat;
-  font-family: 'Avant Garde', sans-serif;
+  font-family: 'Avant Garde';
   padding: 400px 0 200px 0;
   margin-bottom: 0;
   width: 100%;
@@ -616,7 +575,7 @@ body.front #topo {
 }
 #atracoes .chamada {
   padding: 125px 0 50px 0;
-  font-family: 'Avant Garde', sans-serif;
+  font-family: 'Avant Garde';
   letter-spacing: -2px;
 }
 #atracoes .chamada span {
@@ -643,6 +602,11 @@ body.front #topo {
   font-size: 36px;
   margin-bottom: 25px;
 }
+/*#lineup{
+  padding: 150px 0;
+ background: #222;
+}*/
+
 /*--- INFOS -----------------------------------------------------------------------------*/
 
 #infos {
@@ -652,7 +616,7 @@ body.front #topo {
 #infos .pdv {
   padding-top: 150px;
   margin-bottom: 150px;
-  background: transparent url(../img/ico_ingressos.png) top left no-repeat;
+  background: transparent url(../img/ico_evolutiontown.png) top left no-repeat;
 }
 #infos .pdv h4 {
   margin-left: 90px;
@@ -676,20 +640,6 @@ body.front #topo {
   margin-left: 90px;
 }
 #infos .evolution-town .botao {
-  margin-left: 70px;
-}
-#infos .pacotes {
-  padding-top: 150px;
-  background: transparent url(../img/ico_pacotes.png) top left no-repeat;
-}
-#infos .pacotes h4 {
-  margin-left: 90px;
-  font-size: 32px;
-}
-#infos .pacotes p {
-  margin-left: 90px;
-}
-#infos .pacotes .botao {
   margin-left: 70px;
 }
 #infos .excursao {
@@ -793,10 +743,11 @@ body.front #topo {
   width: 100%;
   background: transparent url(../img/ico_ttwhite.png) top center no-repeat;
 }
-.modal.fade .modal-body {
+/*.modal.fade .modal-body,
+.modal.fade .modal-content{
   float: left;
-  background: white;
-}
+}*/
+
 .modal.fade label {
   display: inline-block;
   float: left;
@@ -869,7 +820,7 @@ input[name="submitted_curriculo_portfolio_upload_button"] {
 #store a {
   font-weight: bold;
   color: #333333 !important;
-  font-family: 'Avant Garde', sans-serif;
+  font-family: 'Avant Garde';
   font-size: 1.4em;
 }
 /*--- BLOG -----------------------------------------------------------------------------/
@@ -888,7 +839,7 @@ input[name="submitted_curriculo_portfolio_upload_button"] {
 }
 .front section#blog .view-blog-home .titulo-post {
   font-size: 1.4em;
-  font-family: 'Avant Garde', sans-serif;
+  font-family: 'Avant Garde';
   margin: 20px 0;
 }
 /* pagina de uma noticia */
@@ -902,7 +853,7 @@ input[name="submitted_curriculo_portfolio_upload_button"] {
 }
 .node-type-noticia #topo .chamada {
   padding: 125px 0 50px 0;
-  font-family: 'Avant Garde', sans-serif;
+  font-family: 'Avant Garde';
   letter-spacing: -2px;
 }
 .node-type-noticia #topo .chamada span {
@@ -916,26 +867,6 @@ input[name="submitted_curriculo_portfolio_upload_button"] {
   width: 100%;
   margin: 0;
 }
-.node-type-noticia .pane-page-tabs {
-  padding: 0;
-  margin: 0;
-}
-.node-type-noticia .pane-page-tabs .tabs {
-  margin: 0;
-}
-.node-type-noticia .pane-page-tabs .tabs li {
-  display: block;
-  float: left !important;
-}
-.node-type-noticia .pane-page-tabs .tabs li a,
-.node-type-noticia .pane-page-tabs .tabs li a:hover {
-  display: inline-block;
-  color: #333333 !important;
-  float: left;
-  padding: 7px 14px;
-  border: 2px solid #333333;
-  margin-right: 10px !important;
-}
 .node-type-noticia .conteudo {
   float: left;
   width: 100%;
@@ -948,42 +879,14 @@ input[name="submitted_curriculo_portfolio_upload_button"] {
   -webkit-shape-inside: polygon(0 3%, 100% 0, 100% 100%, 0 97%);
   shape-inside: polygon(0 3%, 100% 0, 100% 100%, 0 97%);
 }
-.node-type-noticia .conteudo p a {
-  color: #333333 !important;
-}
-.node-type-noticia .conteudo p a:hover {
-  text-decoration: underline !important;
-}
 .node-type-noticia .conteudo .view-topo-noticia {
   margin-bottom: 50px;
-}
-.node-type-noticia .conteudo .view-topo-noticia .views-field-field-chamada {
-  padding: 20px 0;
-  border-top: 2px solid #eeeeee;
-  border-bottom: 2px solid #eeeeee;
-  margin: 10px 0 25px 0;
-}
-.node-type-noticia .conteudo .view-topo-noticia .twitter,
-.node-type-noticia .conteudo .view-topo-noticia .facebook {
-  float: left;
-}
-.node-type-noticia .pane-blog-sidebar a {
-  color: #333333 !important;
-}
-.node-type-noticia .pane-blog-sidebar a:hover {
-  text-decoration: underline !important;
-}
-.node-type-noticia .pane-blog-sidebar .view-blog-sidebar .views-row {
-  margin: 25px 0;
-}
-.node-type-noticia .pane-blog-sidebar .view-blog-sidebar .views-row .titulo-post {
-  text-transform: uppercase;
 }
 /*--- FOTOS ----------------------------------------------------------------------------*/
 
 #fotos {
   position: relative;
-  z-index: 250;
+  z-index: 500;
   margin-bottom: -100px;
 }
 /*--- LOCAL ----------------------------------------------------------------------------*/
@@ -1016,10 +919,10 @@ input[name="submitted_curriculo_portfolio_upload_button"] {
 #local .infos img {
   float: left;
 }
-#local .infos .endereco a {
+#local .infos a {
   display: inline-block;
   float: left;
-  padding: 20px 40px;
+  padding: 40px;
   text-align: center;
   color: white;
   background: black;
@@ -1064,7 +967,7 @@ input[name="submitted_curriculo_portfolio_upload_button"] {
 }
 .page-lineup #topo .chamada {
   margin-bottom: -150px;
-  font-family: 'Avant Garde', sans-serif;
+  font-family: 'Avant Garde';
   letter-spacing: -2px;
   text-transform: uppercase;
 }
@@ -1145,7 +1048,7 @@ input[name="submitted_curriculo_portfolio_upload_button"] {
   text-align: center;
 }
 .page-lineup .back .social span {
-  font-family: 'Avant Garde', sans-serif;
+  font-family: 'Avant Garde';
   text-transform: uppercase;
   color: #cccccc;
   display: inline-block;
@@ -1218,7 +1121,7 @@ input[name="submitted_curriculo_portfolio_upload_button"] {
 }
 .page-evolutiontown #topo .chamada {
   padding: 150px 0 25px 0;
-  font-family: 'Avant Garde', sans-serif;
+  font-family: 'Avant Garde';
   letter-spacing: -2px;
 }
 .page-evolutiontown #topo .chamada span {
@@ -1239,7 +1142,7 @@ input[name="submitted_curriculo_portfolio_upload_button"] {
   cursor: pointer;
   border: 2px solid white;
   margin-top: 10px;
-  font-family: 'Avant Garde', sans-serif;
+  font-family: 'Avant Garde';
   font-size: 2em;
   float: left;
   display: block;
@@ -1299,7 +1202,7 @@ input[name="submitted_curriculo_portfolio_upload_button"] {
   border: 2px solid #333333;
   margin-top: 10px;
   margin: 53px 0 0 40px;
-  font-family: 'Avant Garde', sans-serif;
+  font-family: 'Avant Garde';
   font-size: 2em;
   display: block;
   text-transform: uppercase;
@@ -1325,7 +1228,7 @@ body.galeria #topo {
 }
 body.galeria #topo .chamada {
   padding: 150px 0 25px 0;
-  font-family: 'Avant Garde', sans-serif;
+  font-family: 'Avant Garde';
   letter-spacing: -2px;
 }
 body.galeria #topo .chamada span {
@@ -1663,9 +1566,8 @@ footer a {
   }
 }
 @media (min-width: 768px) {
-  #pdvs .modal-dialog  .views-field-body {
-    width: 600px;
-    margin-top: 50px;
+  #pdvs .modal-dialog {
+    width: 75%;
   }
 }
 @media (min-width: 992px) {
